@@ -7,21 +7,20 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id = "@+id/Name"
+        android:id="@+id/main_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/characterName"
-        app:layout_constraintTop_toBottomOf="@id/image"
-        app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
-        android:textSize="18sp"
+        android:text="@string/characterName"
         android:textColor="@color/purple_200"
+        android:textSize="18sp"
         android:textStyle="bold"
-         />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/main_image" />
 
     <ImageView
-        android:id="@+id/image"
+        android:id="@+id/main_image"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
@@ -33,134 +32,136 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id = "@+id/Status"
+        android:id="@+id/main_status"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/Name"
-        app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
-        android:text = "@string/status_label"
+        android:text="@string/status_label"
         android:textStyle="bold"
-        />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id ="@+id/StatusValue"
-        app:layout_constraintTop_toBottomOf="@id/Name"
-        app:layout_constraintLeft_toRightOf="@id/Status"
-        android:text = "@string/status_value"
-        app:layout_constraintBaseline_toBaselineOf="@id/Status"
-        android:layout_marginTop="10dp"
-        />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/main_name" />
 
     <TextView
-        android:id = "@+id/Species"
+        android:id="@+id/main_status_value"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/Status"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
-        android:text = "@string/species_label"
-        android:textStyle="bold"
-        />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id ="@+id/SpeciesValue"
-        app:layout_constraintTop_toBottomOf="@id/Status"
-        app:layout_constraintLeft_toRightOf="@id/Species"
-        android:text = "@string/species_value"
-        app:layout_constraintBaseline_toBaselineOf="@id/Species"
-        android:layout_marginTop="10dp"
-        />
+        android:layout_marginStart="6dp"
+        android:text="@string/status_value"
+        app:layout_constraintBaseline_toBaselineOf="@id/main_status"
+        app:layout_constraintLeft_toRightOf="@id/main_status"
+        app:layout_constraintTop_toBottomOf="@id/main_name" />
 
     <TextView
-        android:id = "@+id/Type"
+        android:id="@+id/main_species"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/Species"
-        app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
-        android:text = "@string/type_label"
+        android:text="@string/species_label"
         android:textStyle="bold"
-        />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id ="@+id/TypeValue"
-        app:layout_constraintTop_toBottomOf="@id/Species"
-        app:layout_constraintLeft_toRightOf="@id/Type"
-        android:text = "@string/type_value"
-        app:layout_constraintBaseline_toBaselineOf="@id/Type"
-        android:layout_marginTop="10dp"
-        />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/main_status" />
 
     <TextView
-        android:id = "@+id/Sex"
+        android:id="@+id/main_species_value"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/Type"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
-        android:text = "@string/sex_label"
-        android:textStyle="bold"
-        />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id ="@+id/SexValue"
-        app:layout_constraintTop_toBottomOf="@id/Type"
-        app:layout_constraintLeft_toRightOf="@id/Sex"
-        android:text = "@string/sex_value"
-        app:layout_constraintBaseline_toBaselineOf="@id/Sex"
-        android:layout_marginTop="10dp"
-        />
+        android:text="@string/species_value"
+        android:layout_marginStart="6dp"
+        app:layout_constraintBaseline_toBaselineOf="@id/main_species"
+        app:layout_constraintLeft_toRightOf="@id/main_species"
+        app:layout_constraintTop_toBottomOf="@id/main_status" />
 
     <TextView
-        android:id = "@+id/Date"
+        android:id="@+id/main_type"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/Sex"
-        app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
-        android:text = "@string/date_label"
+        android:text="@string/type_label"
         android:textStyle="bold"
-        />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id ="@+id/dateValue"
-        app:layout_constraintTop_toBottomOf="@id/Sex"
-        app:layout_constraintLeft_toRightOf="@id/Date"
-        android:text = "@string/date_value"
-        app:layout_constraintBaseline_toBaselineOf="@id/Date"
-        android:layout_marginTop="10dp"
-        />
-    <TextView
-        android:id = "@+id/inEpisodes"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/Date"
         app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/main_species" />
+
+    <TextView
+        android:id="@+id/main_type_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/type_value"
+        android:layout_marginStart="6dp"
+        app:layout_constraintBaseline_toBaselineOf="@id/main_type"
+        app:layout_constraintLeft_toRightOf="@id/main_type"
+        app:layout_constraintTop_toBottomOf="@id/main_species" />
+
+    <TextView
+        android:id="@+id/main_sex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
-        android:text = "@string/inEpisodes"
+        android:text="@string/sex_label"
         android:textStyle="bold"
-        />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/main_type" />
+
     <TextView
+        android:id="@+id/main_sex_value"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id ="@+id/Episodes"
-        app:layout_constraintTop_toBottomOf="@id/Date"
-        app:layout_constraintLeft_toRightOf="@id/inEpisodes"
-        android:text = "@string/episodeList"
-        app:layout_constraintBaseline_toBaselineOf="@id/inEpisodes"
         android:layout_marginTop="10dp"
-        />
+        android:text="@string/sex_value"
+        android:layout_marginStart="6dp"
+        app:layout_constraintBaseline_toBaselineOf="@id/main_sex"
+        app:layout_constraintLeft_toRightOf="@id/main_sex"
+        app:layout_constraintTop_toBottomOf="@id/main_type" />
+
+    <TextView
+        android:id="@+id/main_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/date_label"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/main_sex" />
+
+    <TextView
+        android:id="@+id/dateValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/date_value"
+        android:layout_marginStart="6dp"
+        app:layout_constraintBaseline_toBaselineOf="@id/main_date"
+        app:layout_constraintLeft_toRightOf="@id/main_date"
+        app:layout_constraintTop_toBottomOf="@id/main_sex" />
+
+    <TextView
+        android:id="@+id/main_in_episodes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/inEpisodes"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/main_date" />
+
+    <TextView
+        android:id="@+id/Episodes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/episodeList"
+        android:layout_marginStart="6dp"
+        app:layout_constraintBaseline_toBaselineOf="@id/main_in_episodes"
+        app:layout_constraintLeft_toRightOf="@id/main_in_episodes"
+        app:layout_constraintTop_toBottomOf="@id/main_date" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

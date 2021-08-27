@@ -1,16 +1,16 @@
 <resources>
     <string name = "app_name">Rick</string>
     <string name = "characterName">Rick Sanchez</string>
-    <string name = "status_label">Статус: </string>
+    <string name = "status_label">Статус:</string>
     <string name = "status_value">Жив</string>
-    <string name = "species_label">Вид: </string>
+    <string name = "species_label">Вид:</string>
     <string name = "species_value">Человек</string>
-    <string name = "type_label">Тип: </string>
+    <string name = "type_label">Тип:</string>
     <string name = "type_value">Безумный ученый</string>
-    <string name = "sex_label">Пол: </string>
+    <string name = "sex_label">Пол:</string>
     <string name = "sex_value">Мужчина</string>
-    <string name = "date_label">Дата создания: </string>
+    <string name = "date_label">Дата создания:</string>
     <string name = "date_value">24.08.2021, 19.55</string>
-    <string name = "inEpisodes">Присутствует в эпизодах:  </string>
+    <string name = "inEpisodes">Присутствует в эпизодах:</string>
     <string name = "episodeList">1–49 </string>
 </resources>
